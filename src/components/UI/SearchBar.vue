@@ -24,7 +24,7 @@ export default {
     data() {
         return {
             queryCity: '',
-            openWeatherKey: 'cd495a3382f45fd682aa7792340dd251',
+            openWeatherKey: process.env.VUE_APP_OPEN_WEATHER_KEY,
             openWeatherUrl: 'https://api.openweathermap.org/data/2.5/weather?q=',
             weatherData: {},
         }
